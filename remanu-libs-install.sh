@@ -33,13 +33,13 @@ cd /content/packages/ufl && git checkout 2019.1.0 && pip install .
 cd /content/packages && git clone https://bitbucket.org/fenics-project/ffc.git
 cd /content/packages/ffc && git checkout 2019.1.0 && pip install .
 
+cd /content/packages && git clone https://github.com/FEniCS/ufl.git
+cd /content/packages/ufl && git checkout 2019.1.0 && pip install .
+
 cd /content/packages && git clone https://bitbucket.org/fenics-project/dolfin.git
 cd /content/packages/dolfin && git checkout 2019.1.0 && mkdir build
 cd /content/packages/dolfin/build && cmake .. && make && make install
 source /usr/local/share/dolfin/dolfin.conf && cd /content/packages/dolfin/python && pip install .
-
-cd /content/packages && git clone https://github.com/FEniCS/ufl.git
-cd /content/packages/ufl && git checkout 2019.1.0 && pip install .
 
 pip install dmsh
 pip install optimesh
