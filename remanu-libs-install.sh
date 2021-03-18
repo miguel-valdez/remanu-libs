@@ -35,7 +35,7 @@ cd /content/packages/ffc && git checkout 2019.1.0 && pip install .
 
 cd /content/packages && git clone https://bitbucket.org/fenics-project/dolfin.git
 cd /content/packages/dolfin && git checkout 2019.1.0 && mkdir build
-cd /content/packages/dolfin/build && cmake -DCMAKE_DOLFIN_ENABLE_MPI=OFF.. && make && make install
+cd /content/packages/dolfin/build && cmake -DCMAKE_DOLFIN_ENABLE_MPI=OFF .. && make && make install
 source /usr/local/share/dolfin/dolfin.conf && cd /content/packages/dolfin/python && pip install .
 
 pip install dmsh
